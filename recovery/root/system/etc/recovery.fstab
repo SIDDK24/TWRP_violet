@@ -29,6 +29,6 @@
 
 #device									mount point      fstype        [device2] [length=]
 
-/dev/block/bootdevice/by-name/userdata		/data		ext4    noatime,nosuid,nodev,nodiscard,inline_xattr,reserve_root=32768,resgid=1065,fsync_mode=nobarrier    latemount,wait,check,fileencryption=ice,wrappedkey,reservedsize=128M
+/dev/block/bootdevice/by-name/userdata		/data		ext4    noatime,nosuid,nodev,nodiscard,inline_xattr,reserve_root=32768,resgid=1065,fsync_mode=nobarrier    latemount,wait,check,fileencryption=ice:aes-256-cts,wrappedkey,reservedsize=128M
 
 /dev/block/bootdevice/by-name/misc			/misc		emmc    defaults                                                        defaults
